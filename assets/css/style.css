@@ -1,0 +1,31 @@
+body {
+  font-family: 'Sora', sans-serif;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+
+.header {
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: auto;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  margin: 0 40px;
+  color: #6e7275;
+}
+
+.navbar ul li a:nth-child(4) {
+  margin-right: 0;
+}
