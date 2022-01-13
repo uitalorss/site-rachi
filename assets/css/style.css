@@ -100,3 +100,28 @@ body {
   width: 70%;
   text-align: center;
 }
+
+/* apresentação app */
+.app {
+  background: #eff8ff;
+}
+
+.content-app {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-app h3 {
+  font-size: 2em;
+  color: #293145;
+  font-weight: 500;
+  line-height: 2.5em;
+}
+
+.info-app p {
+  width: 50%;
+  line-height: 1.5em;
+  font-size: 0.875em;
+  color: #6e7275;
+  margin-bottom: 30px;
+}
