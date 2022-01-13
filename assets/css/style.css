@@ -59,6 +59,30 @@ body {
   border-radius: 25px;
 }
 
+@media only screen and (max-width: 1220px) {
+  .container {
+    width: 760px;
+  }
+
+  .navbar ul li a {
+    margin: 0 20px;
+  }
+
+  .content-intro h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+
+  .content-intro img {
+    width: 70%;
+  }
+
+  .content-intro .btn {
+    font-size: 1em;
+    padding: 10px 25px;
+  }
+}
+
 /* Como funciona */
 .funcionamento {
   margin: 50px 0;
@@ -132,6 +156,21 @@ body {
   margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 1220px) {
+  .info-app h3 {
+    font-size: 1.875em;
+    line-height: 1.5em;
+  }
+
+  .info-app p {
+    width: 80%;
+  }
+
+  .loja-app {
+    width: 40%;
+  }
+}
+
 /* Planos */
 .planos {
   margin: 50px 0;
@@ -201,6 +240,20 @@ body {
   border-radius: 25px;
 }
 
+@media only screen and (max-width: 1220px) {
+  .lista-planos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+
+  .card {
+    width: 40%;
+    margin: 20px auto;
+  }
+}
+
 /* Contato */
 .contato {
   background: url(../img/background.png);
@@ -237,6 +290,12 @@ body {
   padding: 8px 40px;
   border: none;
   border-radius: 25px;
+}
+
+@media only screen and (max-width: 1220px) {
+  .subtitle {
+    width: 50%;
+  }
 }
 
 /* footer */
