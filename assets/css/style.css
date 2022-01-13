@@ -69,6 +69,11 @@ body {
 }
 
 .title-section {
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.title-section h3 {
   font-size: 2em;
   font-weight: 500;
   text-align: center;
@@ -77,6 +82,7 @@ body {
 .content-funcionamento ul {
   display: flex;
   justify-content: space-around;
+  padding: 30px 0;
 }
 
 .item-funcionamento {
@@ -103,6 +109,7 @@ body {
 /* apresentação app */
 .app {
   background: #eff8ff;
+  padding: 20px 0;
 }
 
 .content-app {
@@ -127,16 +134,17 @@ body {
 
 /* Planos */
 .planos {
-  margin: 60px 0;
+  margin: 50px 0;
 }
 
 .subtitle {
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
   width: 40%;
   color: 6e7275;
   font-weight: 300;
   margin: 0 auto;
+  line-height: 1.5em;
 }
 
 .content-planos {
@@ -189,6 +197,44 @@ body {
   text-decoration: none;
   font-size: 1.125em;
   padding: 8px 50px;
+  border: none;
+  border-radius: 25px;
+}
+
+/* Contato */
+.contato {
+  background: url(../img/background.png);
+  padding: 20px 0;
+}
+
+.content-contato {
+  flex-direction: column;
+}
+
+.option {
+  color: #eff8ff;
+}
+
+.email-contato {
+  margin: 0 auto;
+}
+
+.email-contato input {
+  margin-right: 20px;
+  width: 250px;
+  padding: 15px;
+  background: none;
+  border: none;
+  color: #eff8ff;
+  border-bottom: solid 2px #eff8ff;
+  font-size: 1.125em;
+}
+
+.email-contato a {
+  background: #0f9afe;
+  color: #eff8ff;
+  text-decoration: none;
+  padding: 8px 40px;
   border: none;
   border-radius: 25px;
 }
