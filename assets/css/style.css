@@ -29,3 +29,31 @@ body {
 .navbar ul li a:nth-child(4) {
   margin-right: 0;
 }
+/* Intro */
+
+.intro {
+  background: #eff8ff;
+}
+
+.content-intro {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-intro h1 {
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 1.25em;
+  color: #293145;
+  margin-bottom: 50px;
+}
+
+.content-intro .btn {
+  background: #0f9afe;
+  color: #eff8ff;
+  text-decoration: none;
+  font-size: 1.125em;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 25px;
+}
