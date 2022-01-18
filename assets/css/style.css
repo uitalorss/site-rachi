@@ -103,7 +103,6 @@ body {
 
   .content-intro {
     display: block;
-    margin: 20px;
   }
 
   .content-intro img {
@@ -170,6 +169,11 @@ body {
   .item-funcionamento p {
     width: 40%;
     text-align: center;
+  }
+
+  .title-section {
+    padding: 20px 0;
+    margin-bottom: 0;
   }
 }
 
@@ -313,10 +317,10 @@ body {
   }
 
   .card {
-    width: 60%;
-    margin: 20px auto;
+    width: 70%;
+    margin: 0 auto 30px auto;
   }
-
+}
 /* Contato */
 .contato {
   background: url(../img/background.png);
@@ -355,9 +359,23 @@ body {
   border-radius: 25px;
 }
 
-@media only screen and (max-width: 1220px) {
+@media only screen and (max-width: 800px) {
   .subtitle {
     width: 50%;
+  }
+
+  .email-contato input {
+    margin-bottom: 20px;
+  }
+
+  .email-contato a {
+    width: 50px;
+    margin: 0 auto;
+  }
+
+  .email-contato {
+    display: flex;
+    flex-direction: column;
   }
 }
 
