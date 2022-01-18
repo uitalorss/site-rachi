@@ -158,6 +158,21 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 800px) {
+  .content-funcionamento ul {
+    display: block;
+  }
+
+  .item-funcionamento {
+    margin-bottom: 40px;
+  }
+
+  .item-funcionamento p {
+    width: 40%;
+    text-align: center;
+  }
+}
+
 /* apresentação app */
 .app {
   background: #eff8ff;
@@ -196,6 +211,16 @@ body {
 
   .loja-app {
     width: 40%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .content-app {
+    display: block;
+  }
+
+  .loja-app {
+    width: 25%;
   }
 }
 
@@ -281,6 +306,16 @@ body {
     margin: 20px auto;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .lista-planos {
+    display: block;
+  }
+
+  .card {
+    width: 60%;
+    margin: 20px auto;
+  }
 
 /* Contato */
 .contato {
