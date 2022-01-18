@@ -1,5 +1,6 @@
 body {
   font-family: 'Sora', sans-serif;
+  box-sizing: border-box;
 }
 
 .container {
@@ -80,6 +81,33 @@ body {
   .content-intro .btn {
     font-size: 1em;
     padding: 10px 25px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+
+  .header {
+    padding: 20px 0;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .img-logo {
+    margin: 0 auto;
+  }
+
+  .content-intro {
+    display: block;
+    margin: 20px;
+  }
+
+  .content-intro img {
+    margin: 0 auto;
   }
 }
 
