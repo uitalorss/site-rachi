@@ -16,18 +16,18 @@ body {
   align-items: center;
 }
 
-.navbar ul li {
-  display: inline-block;
+.lista-nav {
+  display: flex;
   margin: auto;
 }
 
-.navbar ul li a {
+.lista-nav li a {
   text-decoration: none;
   margin: 0 40px;
   color: #6e7275;
 }
 
-.navbar ul li a:nth-child(4) {
+.lista-nav li a:nth-child(4) {
   margin-right: 0;
 }
 
@@ -60,6 +60,10 @@ body {
   border-radius: 25px;
 }
 
+#btn-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 1220px) {
   .container {
     width: 760px;
@@ -86,27 +90,69 @@ body {
 
 @media only screen and (max-width: 800px) {
   .container {
-    width: 100%;
+    width: 90%;
   }
 
   .header {
     padding: 20px 0;
   }
 
-  .navbar {
-    display: none;
+  #btn-mobile{
+    display: block;
   }
 
+  .lista-nav{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 70px;
+    right: 0;
+    background-color: #ffffff;
+    overflow-y: hidden;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  .navbar.active .lista-nav{
+    display: block;
+    height: 200px;
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .lista-nav li{
+    padding: 1em;
+  } 
+
   .img-logo {
-    margin: 0 auto;
+    margin: 0 0 0 15px;
   }
 
   .content-intro {
     display: block;
   }
 
-  .content-intro img {
-    margin: 0 auto;
+  .content-intro h1 {
+    font-size: 2em;
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  .ilustracao{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .ilustracao img{
+    width: 80%;
+  }
+
+  .fa-bars,
+  .fa-times {
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -160,6 +206,7 @@ body {
 @media only screen and (max-width: 800px) {
   .content-funcionamento ul {
     display: block;
+    padding: 0;
   }
 
   .item-funcionamento {
@@ -312,6 +359,10 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
+  .planos, .funcionamento{
+    margin: 30px 0
+  }
+
   .lista-planos {
     display: block;
   }
@@ -319,6 +370,10 @@ body {
   .card {
     width: 70%;
     margin: 0 auto 30px auto;
+  }
+
+  .subtitle{
+    font-size: 0.875em;
   }
 }
 /* Contato */
@@ -362,6 +417,10 @@ body {
 @media only screen and (max-width: 800px) {
   .subtitle {
     width: 50%;
+  }
+
+  .content-contato{
+    padding: 30px;
   }
 
   .email-contato input {
