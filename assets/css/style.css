@@ -313,6 +313,19 @@ body {
   padding: 50px 0;
   margin: 0 20px;
   border-radius: 8px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.prime{
+  background: #34495e;
+  color: #ecf0f1;
+}
+
+.content-card{
+  height: 380px;
 }
 
 .card h5 {
@@ -326,13 +339,13 @@ body {
   font-weight: 500;
   font-size: 2em;
   text-align: center;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 .card .info-plano {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+  min-width: 300px;
+  width: 90%;
+  margin: 5px auto;
   font-weight: 300;
   line-height: 1.5em;
 }
@@ -340,6 +353,7 @@ body {
 .call-to-action {
   text-align: center;
   margin-top: 50px;
+  align-items: flex-end;
 }
 
 .call-to-action a {
@@ -352,38 +366,61 @@ body {
   border-radius: 25px;
 }
 
-@media only screen and (max-width: 1220px) {
+@media only screen and (max-width: 1220px) {  
   .lista-planos {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    margin: 10px 0;
+    gap: 2em;
   }
 
   .card {
-    width: 40%;
-    margin: 20px auto;
+    margin: auto;
+    width: 45%;
+  }
+
+  .title-section{
+    margin-bottom: 0;
   }
 }
 
 @media only screen and (max-width: 800px) {
+
   .planos{
     margin: 30px 0
   }
 
   .lista-planos {
-    display: block;
+    display: flex;
+    flex-wrap: wrap-reverse;
   }
 
   .card {
     width: 70%;
     margin: 0 auto 30px auto;
-  }
+  } 
 
   .subtitle{
     font-size: 0.875em;
   }
 }
+
+@media only screen and (max-width: 480px){
+
+  .lista-planos {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0 auto 30px auto;
+  }
+
+  .card .info-plano {
+    font-size: 0.875em;
+  }
+}
+
 /* Contato */
 .contato {
   background: url(../img/background.png);
